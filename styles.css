@@ -252,13 +252,13 @@ h2 {
 /* Gallery Styles */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
 
 .gallery-item {
-    height: 250px;
+    height: 350px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
