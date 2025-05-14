@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Celebration!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="confetti-container"></div>
+    
+    <header>
+        <div class="header-content">
+            <h1 class="birthday-title">Happy Birthday <span id="birthday-person">[Name]</span>!</h1>
+            <div class="countdown-container">
+                <p>Celebration starts in:</p>
+                <div id="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="wish-section">
+            <div class="wish-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="icing"></div>
+                    <div class="drip drip1"></div>
+                    <div class="drip drip2"></div>
+                    <div class="drip drip3"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+                <div class="wish-text">
+                    <h2>Make a Wish!</h2>
+                    <p>On this special day, may all your dreams and wishes come true. Wishing you health, happiness, and success in everything you do!</p>
+                    <button id="wish-btn" class="btn">Blow Out Candles</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Memory Gallery</h2>
+            <marquee behavior="" direction=""><h3>Happy Birthday Maha Lakshmi(Siri)</h3></marquee>
+            <div class="gallery-container">
+                <div class="gallery-item" style="background-image: url('./images/1.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/2.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/3.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/4.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/5.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/6.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/7.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('./images/8.jpg');"></div>
+                
+            </div>
+        </section>
+
+        <section class="message-section">
+            <h2>Leave a Birthday Message</h2>
+            <form id="message-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Birthday Wish" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Wish</button>
+            </form>
+            <div id="message-board">
+                <h3>Messages from Friends</h3>
+                <div class="messages-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ for your special day!</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/manohar.vasamsetty"><i class="fab fa-facebook"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <a href="https://www.instagram.com/iammanohar_._/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div id="birthday-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Happy Birthday!</h2>
+            <p>Your wish has been sent to the universe! 🎉</p>
+            <div class="balloons">
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+                <div class="balloon"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="birthday-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
+    <button id="music-toggle" class="music-btn"><i class="fas fa-music"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
