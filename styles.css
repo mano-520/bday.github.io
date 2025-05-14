@@ -508,4 +508,13 @@ footer {
         gap: 1rem;
         margin-top: 1rem;
     }
+    
+    .gallery-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    }
 }
