@@ -141,8 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create some sample messages
     const sampleMessages = [
         { name: 'Manohar', message: 'Wishing you an amazing birthday filled with joy and laughter!' },
-        { name: 'Manohar', message: 'Happy Birthday! Hope your day is as special as you are.' },
-        { name: 'Manohar', message: 'Another year wiser! Have a fantastic celebration!' }
+        { name: 'Aneesha', message: 'Wish you a many happy returns of the day! Have a great year ahead and hope you enjoy every little moment in your life.' },
+        { name: 'Pooja', message: 'Another year wiser! Have a fantastic celebration!' }
     ];
     
     sampleMessages.forEach(msg => {
